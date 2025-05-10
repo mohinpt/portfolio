@@ -1,6 +1,6 @@
 
 import tomato from "./tomato.png"
-import elife from "./elife.png"
+import eLife from "./eLife.png"
 import wanderlust from "./wanderlust.png"
 import gemini from "./gemini.png";
 import weather from "./weather.png";
@@ -19,7 +19,7 @@ const projectList = [
         title: 'eLife',
         description: 'An electronics store with product browsing, cart checkout, and secure Stripe payments. Admins can track orders, and update product listings.',
         technologies: ['Redux', 'Node.js', 'Express', 'MongoDB', 'Passport.js', 'Cloudinary', 'JWT'],
-        imageUrl: elife,
+        imageUrl: eLife,
         gitUrl:"https://github.com/mohiin/eLife",
         liveUrl: "https://e-life-mohin.vercel.app" ,
     },
