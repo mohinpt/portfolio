@@ -1,7 +1,4 @@
 
-
-import React from "react";
-
 const Card = ({ className, ...props }) => (
   <div
     className={`rounded-lg border border-white bg-card text-card-foreground shadow-sm ${className}`}
