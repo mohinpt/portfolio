@@ -41,20 +41,20 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-8">
-        {navigation.map((item) => (
+          {navigation.map((item) => (
             <a
               key={item.name}
               href={item.href}
-              className="link-hover text-sm font-medium tracking-wide px-1" 
+              className="link-hover text-sm font-medium tracking-wide px-1"
             >
               {item.name}
-              </a>
-            ))}
+            </a>
+          ))}
         </nav>
 
         {/* Mobile Navigation Toggle */}
         <button
-          className="md:hidden"
+          className="md:hidden cursor-pointer"
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle Menu"
         >
@@ -66,8 +66,8 @@ const Navbar = () => {
       <div
 
         className={(
-          "fixed inset-0 z-40 bg-background flex flex-col items-center justify-center transition-all duration-300 ease-in-out",
-          isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none -translate-y-4"
+          "fixed inset-0 z-40 flex flex-col items-center justify-center",
+          isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
         )}
       >
         <nav className="flex flex-col space-y-6 items-center md:hidden">
