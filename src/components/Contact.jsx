@@ -52,7 +52,7 @@ const Contact = () => {
   ];
 
   const socialLinks = [
-    { icon: <Github size={24} />, url: 'https://github.com/mohiin' },
+    { icon: <Github size={24} />, url: 'https://github.com/mohinpt' },
     { icon: <Linkedin size={24} />, url: 'https://www.linkedin.com/in/themohin' },
     { icon: <Code size={24} />, url: 'https://leetcode.com/u/themohin' },
   ];
