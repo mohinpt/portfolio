@@ -64,18 +64,17 @@ const Navbar = () => {
 
       {/* Mobile Navigation Menu */}
       <div
-
-        className={(
-          "fixed inset-0 z-40 flex flex-col items-center justify-center",
-          isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
-        )}
+        className={`
+    fixed top-16 left-0 z-40 w-full overflow-hidden transition-all duration-500 ease-in-out bg-white
+    ${isOpen ? "max-h-screen" : "max-h-0"}
+  `}
       >
-        <nav className="flex flex-col space-y-6 items-center md:hidden">
+        <nav className="flex flex-col gap-4 items-center py-6 md:hidden">
           {navigation.map((item) => (
             <a
               key={item.name}
               href={item.href}
-              className="text-2xl font-medium"
+              className="text-2xl font-medium link-hover"
               onClick={() => setIsOpen(false)}
             >
               {item.name}
@@ -83,7 +82,8 @@ const Navbar = () => {
           ))}
         </nav>
       </div>
-    </header>
+
+    </header >
   );
 };
 
