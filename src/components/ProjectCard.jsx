@@ -48,7 +48,7 @@ const ProjectCard = ({ project, index }) => {
         <button onClick={() => window.open(project.liveUrl, '_blank')}
           className="flex items-center gap-1 border border-slate-300 bg-black text-white  hover:bg-white hover:text-black px-4 py-1 rounded cursor-pointer">
           <ExternalLink size={16} />
-          <span>Live Demo</span>
+          <span>Live</span>
         </button>
       </CardFooter>
     </Card>
